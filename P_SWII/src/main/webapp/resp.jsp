@@ -6,11 +6,11 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<%
-	int idade = (int) session.getAttribute("idade");
-
-%>
+	<%
+		int idade = (int) session.getAttribute("idade"); 
+		String nome = (String) session.getAttribute("nome");
+	%>
 <body>
-	<h1> Sua idade é: <%=idade %> anos.</h1>
+	<h1><%=nome %>, <br>Sua idade é: <%=idade %> anos.</h1>
 </body>
 </html>
