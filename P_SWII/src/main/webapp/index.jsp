@@ -8,8 +8,8 @@
 </head>
 <body>
 <form method="post" action="./servlet.do">
-Nome: <input type="text" name="nome"> <br>
-Ano nasc.: <input type="number" name="ano"> <br>
+Nome: <input type="text" name="nome" required> <br>
+Ano nasc.: <input type="number" name="ano" required> <br>
 <input type="submit" value="Enviar">
 </form>
 </body>

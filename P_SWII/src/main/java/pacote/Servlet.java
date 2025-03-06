@@ -38,10 +38,14 @@ public class Servlet extends HttpServlet {
 		int ano = Integer.parseInt(
 				request.getParameter("ano"));
 
+		String nome = request.getParameter("nome");
+		
 		int idade = 2025 - ano;
 		
 		HttpSession session = request.getSession();
 		session.setAttribute("idade", idade);
+		session.setAttribute("nome", nome);
+		
 		response.sendRedirect("./resp.jsp");
 	}
 }
